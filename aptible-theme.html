@@ -8,18 +8,21 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="http://getbootstrap.com/docs-assets/ico/favicon.png">
 
-    <title>Theme Template for Bootstrap</title>
+    <title>Aptible Theme Template for Bootstrap</title>
+
+    <!-- JavaScript at the end -->
 
     <!-- Bootstrap core CSS -->
-    <!-- <link href="http://getbootstrap.com/dist/css/bootstrap.css" rel="stylesheet"> -->
-    <link href="../template/getbootstrap/bootstrap.css" rel="stylesheet">
-    <!-- Bootstrap theme -->
-    <!-- <link href="http://getbootstrap.com/dist/css/bootstrap-theme.min.css" rel="stylesheet"> -->
-    <link href="../template/getbootstrap/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- Official twbs version, w/ GitHub Pages CDN: -->
+    <!-- Be sure to check version -->
+    <!-- <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="vendor/bootstrap-3.0.3.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <!-- <link href="http://getbootstrap.com/examples/theme/theme.css" rel="stylesheet"> -->
-    <link href="../template/getbootstrap/theme.css" rel="stylesheet">
+    <!-- Aptible theme - always load this after Bootstrap -->
+    <link href="lib/aptible-theme.css" rel="stylesheet">
+
+    <!-- Beginning of your custom CSS to implement this theme -->
+    <link href="lib/your-custom.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -379,10 +382,20 @@
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="getbootstrap/jquery-1.10.2.min.js"></script>
-    <script src="getbootstrap/bootstrap.min.js"></script>
-    <script src="getbootstrap/holder.js"></script>
+    <!-- Placed at the end of the document so the
+         pages load faster. None of this is minified or
+         served quickly. Browse in development, but
+         consider minifying and using a CDN in production -->
+
+    <script src="vendor/jquery-1.10.2.js"></script>
+    <script src="vendor/bootstrap-3.0.3.js"></script>
+    <script src="vendor/holder-2.2.js"></script>
+
+    <!-- CDN versions: -->
+    <!-- <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script> -->
+    <!-- <script src="https://oss.maxcdn.com/libs/jquery/1.10.2/jquery.min.js"></script> -->
+    <!-- Holder 2.3 - NOT 2.2 - check version -->
+    <!-- <script src="http://imsky.github.io/holder/holder.js"></script> -->
 
 
 </body></html>
